@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <title>BestBookBay Book Requests/Doubts and Querys</title>
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="su.css">
+    <script src="main.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+</head>
+
+</head>
+
+<body>
+    <center>
+        <br><br><br><br><br><br><br><br>
+        <div style="background-color: rgba(254, 254, 255, 0.685);
+        width:500px;
+        height:200px;
+        border-radius:100px;
+        ">
+            <label>What do you need?</label>
+           
+            <select class="form-control" name="Subject" id="Subject">
+                <option value="Book Request">Book Request</option>
+                <option value="Website change request(Glitch,Bug etc.)">Website change request(Glitch,Bug etc.)</option>
+                <option value="How do I use the website?">How do I use the website?</option>
+                 
+              </select>
+            
+            <label>Email Information:</label>
+            <textarea class="form-control" id="user_data" placeholder="Input what you want to say here"></textarea>
+            <br>
+            <button onclick="send()"class="btn btn-primary">Send<sup><img height="20px"
+                        src="https://img.icons8.com/fluency/48/000000/filled-sent.png" /></sup></button>
+            <div id="chat"></div>
+        </div>
+
+        <script>
+           function send(){
+               subject=document.getElementById("Subject").value;
+               body=document.getElementById("user_data").value;
+            window.open('mailto:bestbookbayservice@gmail.com?subject='+subject+'&body='+body+'');
+            
+        }
+        </script>
+    </center>
+</body>

@@ -1,0 +1,75 @@
+<head>
+    <title>BestBookBay Background Picture Change</title>
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+</head>
+<body>
+    <center>
+        <h1>Background Picture Change</h1>
+        <br>
+        <p>This will chnage your bakcground.Once you start using another acount or device or reload data your background image will go back to the original give one.Click on image of you want to use one or copy image adrees from a picture online and put it in the text input.</p>
+        <br>
+        
+        <br>
+        <span><img onclick="a1()" height="450px" src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Free-Mtg-Backgrounds.jpg"></span>
+        <hr>
+        <span><img onclick="a2()" height="450px" src="https://external-preview.redd.it/o_CwmGCgfS06uymClNwL9dY8FLpqpK2T9lc8wDQSV2M.jpg?auto=webp&s=92b4dfa04ce6809d50c9d4b1ccca00a35ca8d249"></span>
+        <hr>
+        <span><img onclick="a3()" height="450px" src=https://cdn.nimbusthemes.com/2017/09/09233341/Free-Nature-Backgrounds-Seaport-During-Daytime-by-Pexels.jpeg></span>
+        <hr>
+        <span><img onclick="a4()" height="450px" src="https://wallpaperaccess.com/full/38636.jpg"></span>
+
+    </center>
+    <style>
+        body{
+            background:linear-gradient(skyblue,rgb(25, 177, 238));
+        height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+        }
+        .form-control{
+            height:70px;
+            width:60%;
+            font-size:30px;
+        }
+    </style>
+    <script>
+        function a1(){
+            link="https://www.pixelstalk.net/wp-content/uploads/2016/06/Free-Mtg-Backgrounds.jpg";
+            
+            localStorage.setItem("ImageBackgroundLink",link);
+            window.location="search.html";
+        }
+        function a2(){
+            link="https://external-preview.redd.it/o_CwmGCgfS06uymClNwL9dY8FLpqpK2T9lc8wDQSV2M.jpg?auto=webp&s=92b4dfa04ce6809d50c9d4b1ccca00a35ca8d249";
+            localStorage.removeItem("ImageBackgroundLink")
+            localStorage.setItem("ImageBackgroundLink",link);
+            window.location="search.html";
+        }
+        function a3(){
+            link="https://cdn.nimbusthemes.com/2017/09/09233341/Free-Nature-Backgrounds-Seaport-During-Daytime-by-Pexels.jpeg";
+            localStorage.removeItem("ImageBackgroundLink")
+            localStorage.setItem("ImageBackgroundLink",link);
+            window.location="search.html";
+        }
+        function a4(){
+            link="https://wallpaperaccess.com/full/38636.jpg";
+            localStorage.removeItem("ImageBackgroundLink")
+            localStorage.setItem("ImageBackgroundLink",link);
+            window.location="search.html";
+        }
+    </script>
+</body>

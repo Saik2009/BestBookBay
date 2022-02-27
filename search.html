@@ -1,0 +1,65 @@
+<head>
+    <title>BestBookBay Search</title>
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Something.css">
+    <script src="search.js"></script>
+</head>
+<body onload="bbb()">
+    <center>
+        <img id="settings"style="float:right;" height="75px" src="Settings.png" onclick="tosettings()"></span>
+        <input id="search"class="form-control" placeholder="Please type full name of audiobook">
+        <br>
+        <button class="btn btn-primary" onclick="booksearch()">Find Audiobook</button>
+        <br><br><br>
+        <button onclick="next()" class="btn btn-warning" style="float:right; ">Need Help?</button>
+        <h1 style="font-family: 'Luxurious Roman', cursive;background-color: aliceblue;width:45%;">Popular Choices</h1>
+        <span><img onclick="hpcc()" height="450px" src="https://fulllengthaudiobooks.com/wp-content/uploads/2021/02/518VhA3dH9L._SX329_BO1204203200.jpg"></span>
+        <span><img onclick="pjlt()"height="450px" src="https://fulllengthaudiobooks.com/wp-content/uploads/2021/02/51BfYSYSfxL._SX336_BO1204203200.jpg"></span>
+        <span><img onclick="eragon1()"height="450px" src="https://fulllengthaudiobooks.com/wp-content/uploads/2021/02/51ZIDk0a8oL._SX330_BO1204203200.jpg"></span>
+       
+    </center>
+    <style>
+        body{
+            
+            background-repeat:no-repeat;
+            background-size:cover;
+        }
+        .form-control{
+            width:80%;
+            height: 130px;
+            font-size:50px;
+            
+
+        }
+          
+
+         
+        
+        #settings:hover{
+            
+            
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+        
+    </style>
+    
+</body>

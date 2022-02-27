@@ -1,0 +1,52 @@
+<head>
+    <title>BestBookBay Book</title>
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Something.css">
+    <script src="main.js"></script>
+</head>
+<body onload="load()">
+<center>
+    <h1 style="font-family: 'Moon Dance', cursive; font-size: 100;color:aliceblue" id="booktitle"></h1>
+    <br>
+    <br>
+    <img height="300px"id="bookimg" src="">
+    <br>
+    <hr>
+    <br><br>
+    <div id="audio"></div>
+   
+</center>
+</body>
+<style>
+    
+</style>
+<script>
+    function load(){
+        title=localStorage.getItem("Bookname");
+        document.getElementById("booktitle").innerHTML=title;
+        audio=localStorage.getItem("Audio");
+        document.getElementById("audio").innerHTML=audio;
+        Image=localStorage.getItem("Img");
+        document.getElementById("bookimg").src=Image;
+        //Background Change
+        link = localStorage.getItem("ImageBackgroundLink");
+    console.log(link);
+    body=document.getElementsByTagName('body')[0];
+    body.style.background = "url("+link+")";
+    body.style.backgroundSize="cover";
+    }
+
+</script>
